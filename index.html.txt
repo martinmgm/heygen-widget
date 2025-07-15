@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>HeyGen Widget</title>
+  <style>
+    #heygen-widget {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: none;
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      z-index: 9999;
+    }
+
+    @media (max-width: 600px) {
+      #heygen-widget {
+        width: 90%;
+        height: 300px;
+        bottom: 10px;
+        left: 5%;
+        right: 5%;
+        border-radius: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <iframe
+    id="heygen-widget"
+    src="https://labs.heygen.com/interactive-avatar/share?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJlOTExMmE5NmEwNDc0N2NiOTBlM2IwOTdmMmExY2FmMSIsInByZXZpZXdJbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3YzL2U5MTEyYTk2YTA0NzQ3Y2I5MGUzYjA5N2YyYTFjYWYxL2Z1bGwvMi4yL3ByZXZpZXdfdGFyZ2V0LndlYnAiLCJuZWVkUmVtb3ZlQmFja2dyb3VuZCI6ZmFsc2UsImtub3dsZWRnZUJhc2VJZCI6IjA4Yzc5YjE3YTUwOTRlOWNiZmIyNGUwMjg1MjY5ZDJjIiwic2hhcmVfY29kZSI6ImE3MzZiMDI4LTczODktNDEzMy1iZjQ2LTY4Yjk2YjFjZmFkZCIsInVzZXJuYW1lIjoiNmRjNWE1OTA1OGNhNDczNGJijhjNWQ2YTA2MDE5OGQifQ=="
+    frameborder="0"
+    allow="microphone"
+    allowfullscreen
+  ></iframe>
+</body>
+</html>
